@@ -1,3 +1,6 @@
+echo "// Temporary update for testing" >> routes/temp.js
+git add routes/temp.js
+git commit -m "Added temporary file to routes for testing"
 function get_contacts(res)
 {
   pgconn.query('SELECT * FROM contacts', function(err,results) {

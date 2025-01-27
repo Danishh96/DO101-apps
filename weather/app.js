@@ -7,6 +7,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 
 var app = express();
+echo "// Temporary comment for testing" >> app.js
+git add app.js
+git commit -m "Added temporary comment to app.js"
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const { pgconn } = require('../db/config')
+echo "// Temporary update for main testing" >> views/main_temp.js
+git add views/main_temp.js
+git commit -m "Added temporary file to views for testing"
+
 
 function get_contacts(res)
 {

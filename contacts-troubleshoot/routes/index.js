@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const { pgconn } = require('../db/config')
+echo "// Temporary update for testing" >> routes/temp.js
+git add routes/temp.js
+git commit -m "Added temporary file to routes for testing"
 
 function get_contacts(res)
 {
@@ -53,6 +56,7 @@ router.get('/', function(req, res) {
       get_contacts(res); 
     }
   })
+  
 });
 
 module.exports = router;
